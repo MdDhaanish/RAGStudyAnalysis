@@ -30,45 +30,47 @@ The system retrieves the most relevant chunks using **ChromaDB embeddings** and 
    git clone https://github.com/your-username/rag-pdf-chatbot.git
    cd rag-pdf-chatbot
 
-2.Create and activate a virtual environment:
+2. Create and activate a virtual environment:
 
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-3.Install dependencies:
+3. Install dependencies:
 
 pip install -r requirements.txt
 
 
-4.Download the quantized GGUF model (choose one based on your RAM):
+4. Download the quantized GGUF model (choose one based on your RAM):
 
 Recommended (8–16GB RAM): https://huggingface.co/TheBloke/CapybaraHermes-2.5-Mistral-7B-GGUF/blob/main/capybarahermes-2.5-mistral-7b.Q4_K_M.gguf
 
 Low-memory systems (6GB RAM): https://huggingface.co/TheBloke/CapybaraHermes-2.5-Mistral-7B-GGUF/blob/main/capybarahermes-2.5-mistral-7b.Q3_K_M.gguf
 
-5.Place the file inside:
+5. Place the file inside:
 
 models/
   └── capybarahermes-2.5-mistral-7b.Q4_K_M.gguf
 
 ## Usage
 
-1.Start the Flask server:
+1. Start the Flask server:
 
 python app.py
 
 
-2.Open the app in your browser:
+2. Open the app in your browser:
 
 http://localhost:5000/
 
 
-3.Upload a PDF and start asking questions 
+3. Upload a PDF and start asking questions 
 
 
 
 ## Project Highlights: 
 
-1.Handles 200+ PDFs with 95% retrieval accuracy
-2.Answers in <2 seconds on CPU with GGUF quantization
-3.Increased engagement by 60% and user satisfaction by 70% in tests
+1. Handles 200+ PDFs with 95% retrieval accuracy
+
+2. Answers in <2 seconds on CPU with GGUF quantization
+
+3. Increased engagement by 60% and user satisfaction by 70% in tests
